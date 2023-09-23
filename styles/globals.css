@@ -74,8 +74,19 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .light {
+    --background-image: url('/light.svg');
+  }
+
+  .dark {
+    --background-image: url('/dark.svg');
   }
 }
